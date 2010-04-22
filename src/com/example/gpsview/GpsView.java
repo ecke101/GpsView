@@ -28,6 +28,7 @@ public class GpsView extends MapActivity
     private MapController mc;
     private MyLocationOverlay myLocationOverlay;
     
+    
     /** Called when the activity is first created. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
