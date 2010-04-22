@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+    
+	<LinearLayout
+	    android:orientation="horizontal"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    >
+    
+		<LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="wrap_content" android:layout_marginLeft="10sp">
+	    	
+	    	<TextView
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+    			android:text="Speed (km/h)" 
+    			android:textSize="14sp"
+    		/>
+    		<TextView
+				android:id="@+id/speed"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+    			android:text="0.0" 
+    			android:textSize="55sp"
+    		/>
+	    </LinearLayout>
+    	
+		<LinearLayout
+	    	android:orientation="vertical"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_width="fill_parent" android:layout_marginRight="10sp">
+	    	
+	    	<TextView
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+    			android:text="Distance (km)" 
+    			android:textSize="14sp"
+    			android:layout_gravity="right"
+    		/>
+    			
+    		<TextView
+				android:id="@+id/distance"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+    			android:text="0.00" 
+    			android:textSize="38sp"
+    			android:layout_gravity="right"
+    		/>
+	    </LinearLayout>
+    </LinearLayout>
+
+	<com.google.android.maps.MapView 
+		android:id="@+id/mapview1"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:enabled="true" 
+		android:clickable="true" 
+		android:apiKey="01uzqnNu7v6QWvqh8ORP0QrKSPPne0IIM1cjJpg" />    
+    
+</LinearLayout>
